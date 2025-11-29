@@ -14,7 +14,7 @@
   "@context": "https://schema.org",
   "@type": "Plumber",
   "name": "Leslie Loodgieter",
-  "image": "https://leslieloodgieter.nl/images/logo.png",
+  "image": "https://leslieloodgieter.nl/images/logo2.png",
   "url": "https://leslieloodgieter.nl",
   "telephone": "+31 6 8233 2281",
   "email": "info@leslieloodgieter.nl",
@@ -190,7 +190,7 @@
     <!-- HEADER -->
     <header>
         <div class="container nav">
-            <img src="images/logo.png" alt="Logo van Leslie Loodgieter" class="logo">
+            <img src="images/logo2.png" alt="Logo van Leslie Loodgieter" class="logo">
           
             <nav>
                 <a href="#diensten">Diensten</a>
@@ -210,11 +210,32 @@
         </div>
     </section>
 
+    <section id="advantages" style="padding:60px 20px; background:#f0f6ff; text-align:center;">
+      <div style="max-width:1000px; margin:auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:30px;">
+        
+        <div>
+          <h3>24/7 Spoedservice</h3>
+          <p>We zijn 24 uur per dag, 7 dagen per week bereikbaar. Heeft u een probleem? Bel ons direct!</p>
+        </div>
+
+        <div>
+          <h3>Scherpe tarieven</h3>
+          <p>Hoogwaardige service hoeft niet duur te zijn! Bekijk onze tarieven of vraag een offerte aan.</p>
+        </div>
+
+        <div>
+          <h3>5 jaar garantie</h3>
+          <p>Wij streven naar 100% tevredenheid, daarom geven wij 5 jaar garantie op al onze reparaties en diensten.</p>
+        </div>
+
+      </div>
+    </section>
+
     <!-- DIENSTEN -->
     <section id="diensten">
         <div class="container">
             <h2>Diensten</h2>
-            <img style="margin:auto;display:block;" src="images/big.png" />
+            <img style="margin:auto;display:block;max-width: 90vw; max-height: 75vh; margin-bottom: 1em;" src="images/LeslieLoodgieter.png" />
 
             <div class="service-grid">
 
@@ -241,6 +262,63 @@
             </div>
         </div>
     </section>
+    
+    
+<style>
+/* Portfolio thumbnails */
+.thumbnails {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.thumbnails img {
+  max-width: 150px;
+  max-height: 80px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.thumbnails img:hover {
+  transform: scale(1.05);
+}
+
+/* Simple lightbox */
+.lightbox img {
+  display: block;
+}
+
+.lightbox::after {
+  content: '';
+  display: none;
+}
+
+.lightbox:target::after {
+  content: '';
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: block;
+  z-index: 999;
+}
+
+/* Lightbox image display */
+.lightbox:target img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 90%;
+  max-height: 90%;
+  z-index: 1000;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+</style>
 
     <!-- OVER MIJ -->
     <section id="over">
@@ -251,6 +329,18 @@
                 betrouwbare loodgietersdiensten in de hele regio. 
                 Eerlijke communicatie, vakmanschap en klanttevredenheid staan altijd centraal.
             </p>
+            
+            <div class="portfolio" hidden>
+            <!--<h3>Onze eerdere projecten</h3>-->
+            <div class="thumbnails">
+              <a href="images/1000010982.jpg" target="_blank" class="lightbox">
+                <img src="images/small1000010982.jpg" alt="Tegelwerk project 1">
+              </a>
+              <a href="images/1000010989.jpg" target="_blank" class="lightbox">
+                <img src="images/small1000010989.jpg" alt="Tegelwerk project 2">
+              </a>
+            </div>
+          </div>
         </div>
     </section>
 
