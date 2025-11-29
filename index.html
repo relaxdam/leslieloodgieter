@@ -1,15 +1,210 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
-    <meta name="description" content="Local service for plumbing needs in the area.">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Leslie Loodgieter — Loodgieter in Rotterdam | 24/7 storingsdienst & Badkamer renovatie</title>
+  <meta name="description" content="Leslie Loodgieter — professionele loodgieter in Rotterdam. Snel herstel van lekkages en gebroken leidingen, badkamer renovaties en ontstoppingen. 24/7 storingsdienst." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Plumber",
+    "name": "Leslie Loodgieter",
+    "telephone": "+31-6-82332281",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rotterdam",
+      "addressLocality": "Rotterdam",
+      "postalCode": "",
+      "addressCountry": "NL"
+    },
+    "openingHours": "Mo-Su 00:00-23:59",
+    "url": "https://leslieloodgieter.nl",
+    "priceRange": "€€",
+    "areaServed": [
+      { "@type": "Place", "name": "Rotterdam" },
+      { "@type": "Place", "name": "Rhoon" },
+      { "@type": "Place", "name": "Poortugaal" },
+      { "@type": "AdministrativeArea", "name": "Zuid-Holland" }
+    ]
+  }
+  </script>
 </head>
 <body>
-    <h1>Welkom bij Leslie Loodgieter!</h1>
-    <p>Wij bieden lokale loodgietersdiensten in uw omgeving.</p>
-    <meta itemprop="areaServed" content="NL" />
-    <meta itemprop="serviceArea" content="Netherlands" />
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="branding">
+        <img src="images/logo.svg" alt="Leslie Loodgieter logo" class="logo">
+        <div class="brand-text">
+          <h1>Leslie Loodgieter</h1>
+          <p class="tag">Betrouwbare loodgieter en badkamer renovatie — Rotterdam</p>
+        </div>
+      </div>
+
+      <div class="header-cta">
+        <a class="call-btn" href="tel:+31682332281">Bel +31 6 82332281</a>
+        <a class="wa-btn" href="https://wa.me/31682332281" target="_blank" rel="noopener">WhatsApp</a>
+        <select id="lang-select" onchange="switchLang(this.value)" aria-label="Taal">
+          <option value="nl">NL</option>
+          <option value="en">EN</option>
+          <option value="ru">RU</option>
+          <option value="uk">UK</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h2 data-i18n="hero_title">24/7 storingsdienst voor lekkages en gebroken leidingen</h2>
+          <p data-i18n="hero_sub">Snel en betrouwbaar in Rotterdam en omgeving — specialist in lekkageherstel en complete badkamer renovaties.</p>
+
+          <!-- Service area highlighted for local relevance -->
+          <p class="service-area">Werkgebied: Rotterdam (o.a. Centrum, Kralingen‑Crooswijk, Delfshaven, Feijenoord), Rhoon, Poortugaal en de provincie Zuid‑Holland.</p>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="tel:+31682332281">Bel nu</a>
+            <a class="btn outline" href="https://wa.me/31682332281" target="_blank" rel="noopener">Chat op WhatsApp</a>
+            <a class="btn ghost" href="#contact">Contact</a>
+          </div>
+        </div>
+        <div class="hero-image" role="img" aria-label="Plumbing illustration">
+          <img src="images/user-image-2.png" alt="Plumbing repair illustration">
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="container section">
+      <h3 data-i18n="services_title">Onze diensten</h3>
+      <p class="lead">Complete loodgieters- en renovatiediensten — transparante prijzen en snelle storingsdienst.</p>
+      <div class="services-grid">
+        <div class="card">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden><path fill="currentColor" d="M7 14l5-5 5 5H7z"/></svg>
+          <h4>Herstel van lekkages en gebroken leidingen</h4>
+          <p>Noodreparaties, droging en herstel om verdere schade te voorkomen.</p>
+        </div>
+        <div class="card">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden><path fill="currentColor" d="M12 2l4 4H8l4-4z"/></svg>
+          <h4>Badkamer renovatie</h4>
+          <p>Volledige renovatie van ontwerp tot oplevering — tegels, sanitair en leidingwerk.</p>
+        </div>
+        <div class="card">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden><path fill="currentColor" d="M3 6h18v2H3z"/></svg>
+          <h4>Ontstopping en rioolwerk</h4>
+          <p>Snel doorvoeren van verstoppingen, rioolinspectie en reiniging.</p>
+        </div>
+        <div class="card">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden><path fill="currentColor" d="M6 6h12v12H6z"/></svg>
+          <h4>CV & warm water</h4>
+          <p>Installatie en onderhoud van ketels en warmwaterinstallaties.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="container section">
+      <h3 data-i18n="projects_title">Projecten</h3>
+      <p class="lead">Geselecteerde klussen — voor/na en detailfoto's.</p>
+      <div class="gallery">
+        <img src="images/user-image-1.png" alt="Company logo style image">
+        <img src="images/user-image-2.png" alt="Leak repair illustration">
+        <img src="https://images.unsplash.com/photo-1581578736980-8d250e2a6f29?auto=format&fit=crop&w=1200&q=60" alt="Bathroom renovation">
+      </div>
+    </section>
+
+    <section id="reviews" class="container section">
+      <h3 data-i18n="reviews_title">Reviews</h3>
+      <div class="testimonials">
+        <blockquote>
+          <p>“Snel en professioneel geholpen bij een breuk in de leiding — grote schade voorkomen.”</p>
+          <cite>— K. van D., Rotterdam</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <section id="faq" class="container section">
+      <h3 data-i18n="faq_title">Veelgestelde vragen</h3>
+      <details><summary data-i18n="faq_q1">Wat moet ik doen bij een lekkage?</summary>
+        <p data-i18n="faq_a1">Indien veilig, sluit de hoofdkraan en bel +31 6 82332281. Wij bieden 24/7 storingsdienst.</p>
+      </details>
+    </section>
+
+    <section id="contact" class="container section contact-section">
+      <h3 data-i18n="contact_title">Contact</h3>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h4>Direct hulp nodig?</h4>
+          <p class="big"><a href="tel:+31682332281" class="big-link">+31 6 82332281</a></p>
+          <p><a href="https://wa.me/31682332281" target="_blank" rel="noopener">Chat op WhatsApp</a></p>
+          <p>Email: <a href="mailto:info@leslieloodgieter.nl">info@leslieloodgieter.nl</a></p>
+          <p class="muted">Stuur bij voorkeur ook foto's voor een snellere beoordeling.</p>
+        </div>
+
+        <div class="contact-card form-card">
+          <h4>Stuur een bericht</h4>
+          <form id="quick-contact" onsubmit="return sendQuickEmail(event)">
+            <label>
+              Naam
+              <input type="text" name="name" required>
+            </label>
+            <label>
+              Telefoon
+              <input type="tel" name="phone" required>
+            </label>
+            <label>
+              Korte omschrijving
+              <textarea name="message" rows="4" required></textarea>
+            </label>
+            <div class="form-actions">
+              <button type="submit" class="btn primary">Verstuur bericht</button>
+            </div>
+            <p class="muted">Dit opent uw emailprogramma met een voorgevulde e-mail naar info@leslieloodgieter.nl.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <strong>Leslie Loodgieter</strong><br>
+          Rotterdam — <a href="tel:+31682332281">+31 6 82332281</a><br>
+          Werkgebied: Rotterdam, Rhoon, Poortugaal en Zuid‑Holland
+        </div>
+        <div class="footer-links">
+          <a href="#services">Diensten</a>
+          <a href="#projects">Projecten</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <p class="copyright">&copy; <span id="year"></span> Leslie Loodgieter — Alle rechten voorbehouden.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Small in-page i18n dictionary exists in the repo; ensure default is Dutch
+    document.addEventListener('DOMContentLoaded', function() {
+      try { switchLang('nl'); } catch(e){}
+      document.getElementById('year').textContent = new Date().getFullYear();
+    });
+
+    function sendQuickEmail(e){
+      e.preventDefault();
+      const f = document.getElementById('quick-contact');
+      const name = encodeURIComponent(f.name.value.trim());
+      const phone = encodeURIComponent(f.phone.value.trim());
+      const msg = encodeURIComponent(f.message.value.trim());
+      const subject = encodeURIComponent('Website contact: ' + (name || 'Bezoeker'));
+      const body = encodeURIComponent('Naam: ' + name + '\nTelefoon: ' + phone + '\n\nBericht:\n' + msg);
+      window.location.href = `mailto:info@leslieloodgieter.nl?subject=${subject}&body=${body}`;
+      return false;
+    }
+  </script>
 </body>
 </html>
