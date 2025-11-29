@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Leslie Loodgieter - 24/7 Emergency & Bathroom Renovation (Rotterdam)</title>
+  <meta name="description" content="Leslie Loodgieter — professional plumber in Rotterdam. Fast repairs for leaks, burst pipes, bathroom renovations and blockages. 24/7 emergency service." />
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- JSON-LD LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Plumber",
+    "name":"Leslie Loodgieter",
+    "telephone":"+31-6-82332281",
+    "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"Rotterdam",
+      "addressLocality":"Rotterdam",
+      "postalCode":"",
+      "addressCountry":"NL"
+    },
+    "openingHours":"Mo-Su 00:00-23:59",
+    "url":"https://leslieloodgieter.nl",
+    "priceRange":"€€"
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="branding">
+        <img src="images/logo.svg" alt="Leslie Loodgieter logo" class="logo">
+        <h1>Leslie Loodgieter</h1>
+      </div>
+      <div class="contact-quick">
+        <a class="call-btn" href="tel:+31682332281">Call now: +31 6 82332281</a>
+        <a class="wa-btn" href="https://wa.me/31682332281" target="_blank" rel="noopener">WhatsApp</a>
+        <select id="lang-select" onchange="switchLang(this.value)">
+          <option value="en">English</option>
+          <option value="nl">Nederlands</option>
+          <option value="ru">Русский</option>
+          <option value="uk">Українська</option>
+        </select>
+        <div id="google_translate_element" title="Automatic translate (all languages)"></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero container">
+      <h2 data-i18n="hero_title">24/7 emergency service for leaks and burst pipes</h2>
+      <p data-i18n="hero_sub">Fast on-site response. Specialists in bathroom renovation and general plumbing.</p>
+      <a class="cta" href="#contact" data-i18n="cta_quote">Request a quote</a>
+      <a class="emergency" href="tel:+31682332281" data-i18n="cta_emergency">Emergency - Call now</a>
+    </section>
+
+    <section id="services" class="container">
+      <h3 data-i18n="services_title">Services</h3>
+      <ul>
+        <li><strong data-i18n="svc_burst_title">Burst pipe repair (emergency)</strong> — <span data-i18n="svc_burst_desc">fast repair and drying</span></li>
+        <li><strong data-i18n="svc_bath_title">Bathroom renovation</strong> — <span data-i18n="svc_bath_desc">from design to handover</span></li>
+        <li><strong data-i18n="svc_block_title">Unblocking drains</strong> — <span data-i18n="svc_block_desc">sewers & drains</span></li>
+        <li><strong data-i18n="svc_heat_title">Heating & hot water</strong> — <span data-i18n="svc_heat_desc">installation and maintenance</span></li>
+      </ul>
+    </section>
+
+    <section id="about" class="container">
+      <h3 data-i18n="about_title">About us</h3>
+      <p data-i18n="about_text">Local plumbing company in Rotterdam with years of experience. Certified, insured and reliable. We handle emergencies and renovations.</p>
+    </section>
+
+    <section id="projects" class="container">
+      <h3 data-i18n="projects_title">Projects</h3>
+      <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1581578736980-8d250e2a6f29?auto=format&fit=crop&w=800&q=60" alt="Plumbing project 1">
+        <img src="https://images.unsplash.com/photo-1582719478178-ff6bd95c3a05?auto=format&fit=crop&w=800&q=60" alt="Bathroom renovation">
+        <img src="https://images.unsplash.com/photo-1581091012184-7f9a4a1b9a7d?auto=format&fit=crop&w=800&q=60" alt="Leak repair">
+      </div>
+    </section>
+
+    <section id="reviews" class="container">
+      <h3 data-i18n="reviews_title">Reviews</h3>
+      <blockquote>“Quick and professional help when the pipe burst!” — K. van D.</blockquote>
+    </section>
+
+    <section id="faq" class="container">
+      <h3 data-i18n="faq_title">Frequently Asked Questions</h3>
+      <details><summary data-i18n="faq_q1">What should I do in case of a leak?</summary><p data-i18n="faq_a1">Turn off the main water valve if possible and call us immediately.</p></details>
+    </section>
+
+    <section id="contact" class="container">
+      <h3 data-i18n="contact_title">Contact / Quote</h3>
+
+      <!-- Google Forms embed placeholder.
+           To use Google Forms: create your form, click Send > Embed, and paste the iframe src below.
+           Example plugin iframe (replace YOUR_FORM_EMBED_SRC): -->
+      <div class="form-embed">
+        <!-- Replace the src with your form's embed link -->
+        <iframe id="gform" src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true" width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      </div>
+
+      <p class="alt-contact" data-i18n="alt_contact">Or call/WhatsApp: <a href="tel:+31682332281">+31 6 82332281</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>&copy; <span id="year"></span> Leslie Loodgieter — <a href="privacy.html">Privacy</a></p>
+  </footer>
+
+  <script>
+    // Small in-page i18n with strings for EN, NL, RU, UK
+    const i18n = {
+      en: {
+        hero_title: "24/7 emergency service for leaks and burst pipes",
+        hero_sub: "Fast on-site response. Specialists in bathroom renovation and general plumbing.",
+        cta_quote: "Request a quote",
+        cta_emergency: "Emergency - Call now",
+        services_title: "Services",
+        svc_burst_title: "Burst pipe repair (emergency)",
+        svc_burst_desc: "fast repair and drying",
+        svc_bath_title: "Bathroom renovation",
+        svc_bath_desc: "from design to handover",
+        svc_block_title: "Unblocking drains",
+        svc_block_desc: "sewers & drains",
+        svc_heat_title: "Heating & hot water",
+        svc_heat_desc: "installation and maintenance",
+        about_title: "About us",
+        about_text: "Local plumbing company in Rotterdam with years of experience. Certified, insured and reliable. We handle emergencies and renovations.",
+        projects_title: "Projects",
+        reviews_title: "Reviews",
+        faq_title: "Frequently Asked Questions",
+        faq_q1: "What should I do in case of a leak?",
+        faq_a1: "Turn off the main water valve if possible and call us immediately.",
+        contact_title: "Contact / Quote",
+        alt_contact: "Or call/WhatsApp: +31 6 82332281"
+      },
+      nl: {
+        hero_title: "24/7 storingsdienst voor lekkages en gebroken leidingen",
+        hero_sub: "Snel ter plaatse. Specialisten in badkamer renovatie en algemeen loodgieterswerk.",
+        cta_quote: "Offerte aanvragen",
+        cta_emergency: "Noodmelding - Bel direct",
+        services_title: "Diensten",
+        svc_burst_title: "Herstel gebroken leiding (noodreparatie)",
+        svc_burst_desc: "snelle reparatie en droging",
+        svc_bath_title: "Badkamer renovatie",
+        svc_bath_desc: "van ontwerp tot oplevering",
+        svc_block_title: "Ontstopping",
+        svc_block_desc: "riool & afvoer",
+        svc_heat_title: "CV & warm water",
+        svc_heat_desc: "installatie en onderhoud",
+        about_title: "Over ons",
+        about_text: "Lokaal loodgietersbedrijf in Rotterdam met jaren ervaring. Gecertificeerd, verzekerd en betrouwbaar. Wij behandelen storingen en renovaties.",
+        projects_title: "Projecten",
+        reviews_title: "Reviews",
+        faq_title: "Veelgestelde vragen",
+        faq_q1: "Wat moet ik doen bij een lekkage?",
+        faq_a1: "Sluit de hoofdkraan indien mogelijk en bel ons direct.",
+        contact_title: "Contact / Offerte",
+        alt_contact: "Of bel/WhatsApp: +31 6 82332281"
+      },
+      ru: {
+        hero_title: "Круглосуточная служба при авариях: протечки и прорывы труб",
+        hero_sub: "Оперативный выезд. Ремонт ванных комнат и общие сантехнические работы.",
+        cta_quote: "Запросить смету",
+        cta_emergency: "Аварийный вызов - Позвонить сейчас",
+        services_title: "Услуги",
+        svc_burst_title: "Ремонт прорыва трубы (аварийно)",
+        svc_burst_desc: "быстрый ремонт и сушка",
+        svc_bath_title: "Ремонт ванной комнаты",
+        svc_bath_desc: "от дизайна до сдачи",
+        svc_block_title: "Техническое прочищение",
+        svc_block_desc: "канализация и стоки",
+        svc_heat_title: "Отопление и горячая вода",
+        svc_heat_desc: "установка и обслуживание",
+        about_title: "О нас",
+        about_text: "Местная сантехническая компания в Роттердаме с многолетним опытом. Сертифицированы, застрахованы и надежны.",
+        projects_title: "Проекты",
+        reviews_title: "Отзывы",
+        faq_title: "Часто задаваемые вопросы",
+        faq_q1: "Что делать при протечке?",
+        faq_a1: "По возможности перекройте главный кран и немедленно позвоните нам.",
+        contact_title: "Контакты / Смета",
+        alt_contact: "Или позвоните/WhatsApp: +31 6 82332281"
+      },
+      uk: {
+        hero_title: "Цілодобова служба аварійних викликів: протікання та прориви труб",
+        hero_sub: "Швидкий виїзд на місце. Ремонт ванних кімнат та загальні сантехнічні роботи.",
+        cta_quote: "Замовити кошторис",
+        cta_emergency: "Аварійний виклик - Дзвоніть зараз",
+        services_title: "Послуги",
+        svc_burst_title: "Ремонт прориву труби (аварійно)",
+        svc_burst_desc: "швидкий ремонт та сушка",
+        svc_bath_title: "Ремонт ванної кімнати",
+        svc_bath_desc: "від проєктування до здачі",
+        svc_block_title: "Прочищення каналізації",
+        svc_block_desc: "каналізація та стоки",
+        svc_heat_title: "Опалення та гаряча вода",
+        svc_heat_desc: "встановлення та обслуговування",
+        about_title: "Про нас",
+        about_text: "Місцева сантехнічна компанія в Роттердамі з багаторічним досвідом. Сертифіковані, застраховані та надійні.",
+        projects_title: "Проєкти",
+        reviews_title: "Відгуки",
+        faq_title: "Питання та відповіді",
+        faq_q1: "Що робити при протіканні?",
+        faq_a1: "За можливості перекрийте головний кран та негайно зателефонуйте нам.",
+        contact_title: "Контакт / Кошторис",
+        alt_contact: "Або дзвоніть/WhatsApp: +31 6 82332281"
+      }
+    };
+
+    function setLanguageStrings(lang) {
+      const nodes = document.querySelectorAll('[data-i18n]');
+      nodes.forEach(n => {
+        const key = n.getAttribute('data-i18n');
+        if (i18n[lang] && i18n[lang][key]) n.textContent = i18n[lang][key];
+      });
+    }
+
+    function switchLang(lang) {
+      if (!i18n[lang]) {
+        // fallback to Google Translate if not implemented
+        alert('Automatic translation is available via the "translate" widget if needed.');
+        return;
+      }
+      setLanguageStrings(lang);
+      document.documentElement.lang = lang === 'nl' ? 'nl' : (lang === 'ru' ? 'ru' : (lang === 'uk' ? 'uk' : 'en'));
+    }
+
+    // Default language: English
+    document.addEventListener('DOMContentLoaded', function() {
+      switchLang('en');
+      document.getElementById('year').textContent = new Date().getFullYear();
+    });
+  </script>
+
+  <!-- Google Translate element (fallback to all languages) -->
+  <script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+  }
+  </script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
