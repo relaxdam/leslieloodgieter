@@ -1,210 +1,367 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Leslie Loodgieter — Loodgieter in Rotterdam | 24/7 storingsdienst & Badkamer renovatie</title>
-  <meta name="description" content="Leslie Loodgieter — professionele loodgieter in Rotterdam. Snel herstel van lekkages en gebroken leidingen, badkamer renovaties en ontstoppingen. 24/7 storingsdienst." />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css" />
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Plumber",
-    "name": "Leslie Loodgieter",
-    "telephone": "+31-6-82332281",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Rotterdam",
-      "addressLocality": "Rotterdam",
-      "postalCode": "",
-      "addressCountry": "NL"
-    },
-    "openingHours": "Mo-Su 00:00-23:59",
-    "url": "https://leslieloodgieter.nl",
-    "priceRange": "€€",
-    "areaServed": [
-      { "@type": "Place", "name": "Rotterdam" },
-      { "@type": "Place", "name": "Rhoon" },
-      { "@type": "Place", "name": "Poortugaal" },
-      { "@type": "AdministrativeArea", "name": "Zuid-Holland" }
-    ]
-  }
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leslie Loodgieter | Professionele Loodgietersdiensten</title>
+    <meta name="description" content="Leslie Loodgieter biedt snelle en betrouwbare loodgietersdiensten in Rotterdam, Rhoon, Poortugaal en omgeving. 24/7 bereikbaar voor lekkages, verstoppingen en installatie van sanitair.">
+
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+<link rel="shortcut icon" href="images/favicon.png" type="image/png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Plumber",
+  "name": "Leslie Loodgieter",
+  "image": "https://leslieloodgieter.nl/images/logo.png",
+  "url": "https://leslieloodgieter.nl",
+  "telephone": "+31 6 8233 2281",
+  "email": "info@leslieloodgieter.nl",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Galvanistraat 1001",
+    "addressLocality": "Rotterdam",
+    "postalCode": "3029 AD",
+    "addressCountry": "NL"
+  },
+  "areaServed": [
+    "Rotterdam", "Rhoon", "Poortugaal", "Barendrecht", "Ridderkerk", "Schiedam", "Vlaardingen"
+  ],
+  "openingHours": "Mo-Sa 08:00-18:00",
+  "priceRange": "10€ - 100€"
+}
+</script>
+
+    <style>
+    
+    html {
+  scroll-behavior: smooth;
+}
+
+        /* Global reset */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #222;
+            background: #f7f7f7;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* Header */
+        header {
+            background: #fff;
+            border-bottom: 1px solid #eee;
+            padding: 15px 0;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            max-width: 180px;
+            height: auto;
+        }
+
+        nav a {
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .cta {
+            background: #0077ff;
+            color: #fff !important;
+            padding: 10px 18px;
+            border-radius: 6px;
+        }
+
+        /* Hero */
+        #hero {
+            background: #e8f2ff;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: #0077ff;
+            color: #fff;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Services */
+        #diensten {
+            padding: 60px 0;
+            background: #fff;
+        }
+
+        #diensten h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .service-card {
+            background: #f0f6ff;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        /* Over ons */
+        #over {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        /* Contact */
+        #contact {
+            padding: 60px 0;
+            background: #fff;
+            text-align: center;
+        }
+
+        .call-btn {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 15px 20px;
+            background: #0077ff;
+            color: #fff;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .contact-form {
+            display: grid;
+            gap: 15px;
+            max-width: 500px;
+            margin: 20px auto;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+        .contact-form button {
+            padding: 12px;
+            background: #0077ff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 6px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #f0f0f0;
+            margin-top: 40px;
+        }
+    </style>
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="branding">
-        <img src="images/logo.svg" alt="Leslie Loodgieter logo" class="logo">
-        <div class="brand-text">
-          <h1>Leslie Loodgieter</h1>
-          <p class="tag">Betrouwbare loodgieter en badkamer renovatie — Rotterdam</p>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container nav">
+            <img src="images/logo.png" alt="Logo van Leslie Loodgieter" class="logo">
+          
+            <nav>
+                <a href="#diensten">Diensten</a>
+                <a href="#over">Over mij</a>
+                <a href="#contact" class="cta">Bel nu</a>
+            </nav>
         </div>
-      </div>
+    </header>
 
-      <div class="header-cta">
-        <a class="call-btn" href="tel:+31682332281">Bel +31 6 82332281</a>
-        <a class="wa-btn" href="https://wa.me/31682332281" target="_blank" rel="noopener">WhatsApp</a>
-        <select id="lang-select" onchange="switchLang(this.value)" aria-label="Taal">
-          <option value="nl">NL</option>
-          <option value="en">EN</option>
-          <option value="ru">RU</option>
-          <option value="uk">UK</option>
-        </select>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-copy">
-          <h2 data-i18n="hero_title">24/7 storingsdienst voor lekkages en gebroken leidingen</h2>
-          <p data-i18n="hero_sub">Snel en betrouwbaar in Rotterdam en omgeving — specialist in lekkageherstel en complete badkamer renovaties.</p>
-
-          <!-- Service area highlighted for local relevance -->
-          <p class="service-area">Werkgebied: Rotterdam (o.a. Centrum, Kralingen‑Crooswijk, Delfshaven, Feijenoord), Rhoon, Poortugaal en de provincie Zuid‑Holland.</p>
-
-          <div class="hero-actions">
-            <a class="btn primary" href="tel:+31682332281">Bel nu</a>
-            <a class="btn outline" href="https://wa.me/31682332281" target="_blank" rel="noopener">Chat op WhatsApp</a>
-            <a class="btn ghost" href="#contact">Contact</a>
-          </div>
+    <!-- HERO -->
+    <section id="hero">
+        <div class="container hero-inner">
+            <h1>Snelle & Betrouwbare Loodgietersservice</h1>
+            <p>24/7 beschikbaar voor lekkages, verstoppingen, reparaties en installaties.</p>
+            <p>Beschikbaar in Rotterdam, Rhoon, Poortugaal en omgeving.</p>
+            <a href="#contact" class="btn">Direct Hulp Nodig?</a>
         </div>
-        <div class="hero-image" role="img" aria-label="Plumbing illustration">
-          <img src="images/user-image-2.png" alt="Plumbing repair illustration">
-        </div>
-      </div>
     </section>
 
-    <section id="services" class="container section">
-      <h3 data-i18n="services_title">Onze diensten</h3>
-      <p class="lead">Complete loodgieters- en renovatiediensten — transparante prijzen en snelle storingsdienst.</p>
-      <div class="services-grid">
-        <div class="card">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden><path fill="currentColor" d="M7 14l5-5 5 5H7z"/></svg>
-          <h4>Herstel van lekkages en gebroken leidingen</h4>
-          <p>Noodreparaties, droging en herstel om verdere schade te voorkomen.</p>
-        </div>
-        <div class="card">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden><path fill="currentColor" d="M12 2l4 4H8l4-4z"/></svg>
-          <h4>Badkamer renovatie</h4>
-          <p>Volledige renovatie van ontwerp tot oplevering — tegels, sanitair en leidingwerk.</p>
-        </div>
-        <div class="card">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden><path fill="currentColor" d="M3 6h18v2H3z"/></svg>
-          <h4>Ontstopping en rioolwerk</h4>
-          <p>Snel doorvoeren van verstoppingen, rioolinspectie en reiniging.</p>
-        </div>
-        <div class="card">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden><path fill="currentColor" d="M6 6h12v12H6z"/></svg>
-          <h4>CV & warm water</h4>
-          <p>Installatie en onderhoud van ketels en warmwaterinstallaties.</p>
-        </div>
-      </div>
-    </section>
+    <!-- DIENSTEN -->
+    <section id="diensten">
+        <div class="container">
+            <h2>Diensten</h2>
+            <img style="margin:auto;display:block;" src="images/big.png" />
 
-    <section id="projects" class="container section">
-      <h3 data-i18n="projects_title">Projecten</h3>
-      <p class="lead">Geselecteerde klussen — voor/na en detailfoto's.</p>
-      <div class="gallery">
-        <img src="images/user-image-1.png" alt="Company logo style image">
-        <img src="images/user-image-2.png" alt="Leak repair illustration">
-        <img src="https://images.unsplash.com/photo-1581578736980-8d250e2a6f29?auto=format&fit=crop&w=1200&q=60" alt="Bathroom renovation">
-      </div>
-    </section>
+            <div class="service-grid">
 
-    <section id="reviews" class="container section">
-      <h3 data-i18n="reviews_title">Reviews</h3>
-      <div class="testimonials">
-        <blockquote>
-          <p>“Snel en professioneel geholpen bij een breuk in de leiding — grote schade voorkomen.”</p>
-          <cite>— K. van D., Rotterdam</cite>
-        </blockquote>
-      </div>
-    </section>
+                <div class="service-card">
+                    <h3>Lekkage Reparatie</h3>
+                    <p>Snel opsporen en verhelpen van lekkages in huis of bedrijf.</p>
+                </div>
 
-    <section id="faq" class="container section">
-      <h3 data-i18n="faq_title">Veelgestelde vragen</h3>
-      <details><summary data-i18n="faq_q1">Wat moet ik doen bij een lekkage?</summary>
-        <p data-i18n="faq_a1">Indien veilig, sluit de hoofdkraan en bel +31 6 82332281. Wij bieden 24/7 storingsdienst.</p>
-      </details>
-    </section>
+                <div class="service-card">
+                    <h3>Verstoppingen</h3>
+                    <p>WC, gootsteen of douche verstopt? Wij lossen het snel en netjes op.</p>
+                </div>
 
-    <section id="contact" class="container section contact-section">
-      <h3 data-i18n="contact_title">Contact</h3>
+                <div class="service-card">
+                    <h3>Ketel & Verwarming</h3>
+                    <p>Onderhoud, installatie en reparatie van boilers en verwarmingssystemen.</p>
+                </div>
 
-      <div class="contact-grid">
-        <div class="contact-card">
-          <h4>Direct hulp nodig?</h4>
-          <p class="big"><a href="tel:+31682332281" class="big-link">+31 6 82332281</a></p>
-          <p><a href="https://wa.me/31682332281" target="_blank" rel="noopener">Chat op WhatsApp</a></p>
-          <p>Email: <a href="mailto:info@leslieloodgieter.nl">info@leslieloodgieter.nl</a></p>
-          <p class="muted">Stuur bij voorkeur ook foto's voor een snellere beoordeling.</p>
-        </div>
+                <div class="service-card">
+                    <h3>Sanitair</h3>
+                    <p>Plaatsen of vervangen van kranen, toiletten, douches en meer.</p>
+                </div>
 
-        <div class="contact-card form-card">
-          <h4>Stuur een bericht</h4>
-          <form id="quick-contact" onsubmit="return sendQuickEmail(event)">
-            <label>
-              Naam
-              <input type="text" name="name" required>
-            </label>
-            <label>
-              Telefoon
-              <input type="tel" name="phone" required>
-            </label>
-            <label>
-              Korte omschrijving
-              <textarea name="message" rows="4" required></textarea>
-            </label>
-            <div class="form-actions">
-              <button type="submit" class="btn primary">Verstuur bericht</button>
             </div>
-            <p class="muted">Dit opent uw emailprogramma met een voorgevulde e-mail naar info@leslieloodgieter.nl.</p>
-          </form>
         </div>
-      </div>
     </section>
-  </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-inner">
-        <div>
-          <strong>Leslie Loodgieter</strong><br>
-          Rotterdam — <a href="tel:+31682332281">+31 6 82332281</a><br>
-          Werkgebied: Rotterdam, Rhoon, Poortugaal en Zuid‑Holland
+    <!-- OVER MIJ -->
+    <section id="over">
+        <div class="container about-inner">
+            <h2>Over Leslie</h2>
+            <p>
+                Met jarenlange ervaring en een oog voor kwaliteit biedt Leslie 
+                betrouwbare loodgietersdiensten in de hele regio. 
+                Eerlijke communicatie, vakmanschap en klanttevredenheid staan altijd centraal.
+            </p>
         </div>
-        <div class="footer-links">
-          <a href="#services">Diensten</a>
-          <a href="#projects">Projecten</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </div>
-      <p class="copyright">&copy; <span id="year"></span> Leslie Loodgieter — Alle rechten voorbehouden.</p>
-    </div>
-  </footer>
+    </section>
 
-  <script>
-    // Small in-page i18n dictionary exists in the repo; ensure default is Dutch
-    document.addEventListener('DOMContentLoaded', function() {
-      try { switchLang('nl'); } catch(e){}
-      document.getElementById('year').textContent = new Date().getFullYear();
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="container contact-inner">
+            <h2>Contact</h2>
+            <p>Heb je direct hulp nodig? Bel nu:</p>
+
+            <a href="tel:+31682332281" class="call-btn">📞 +31 6 82332281</a>
+            <div>
+            <a href="https://wa.me/+31682332281" target="_blank"><svg style="width: 1em" ;="" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>WhatsApp</title><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path></svg> WhatsApp</a>
+            </div>
+            
+            <p>Of stuur een bericht:</p>
+
+            <form class="contact-form" id="contactForm">
+                <input type="text" name="name" placeholder="Naam" required>
+                <input type="email" name="email" placeholder="E-mailadres" required>
+                <textarea name="message" placeholder="Bericht" required></textarea>
+                <button type="submit">Verzenden</button>
+            </form>
+            
+            <script>
+const endpoint = 'https://script.google.com/macros/s/AKfycbwMWN--sM2cg6mpAcw1IiUhhg558xuyejRghmJ0GnvMcz2WDM-8EDeNprLo-s4XHbGH/exec';
+
+  const form = document.getElementById("contactForm");
+
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const formData = {
+      name: form.name.value,
+      email: form.email.value,
+      message: form.message.value
+    };
+
+    fetch(endpoint, {
+      method: "POST",
+      headers: { "Content-Type": "text/plain;charset=utf-8" },
+      body: JSON.stringify(formData),
+    })
+    .then((res) => res.json())
+    .then((data) => {
+      if (data.status === "SUCCESS") {
+        alert("Bericht succesvol verzonden!");
+        form.reset();
+      } else {
+        alert("Er ging iets mis. Probeer het later opnieuw.");
+      }
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+      alert("Verbinding mislukt. Probeer later opnieuw.");
     });
+  });
+</script>
 
-    function sendQuickEmail(e){
-      e.preventDefault();
-      const f = document.getElementById('quick-contact');
-      const name = encodeURIComponent(f.name.value.trim());
-      const phone = encodeURIComponent(f.phone.value.trim());
-      const msg = encodeURIComponent(f.message.value.trim());
-      const subject = encodeURIComponent('Website contact: ' + (name || 'Bezoeker'));
-      const body = encodeURIComponent('Naam: ' + name + '\nTelefoon: ' + phone + '\n\nBericht:\n' + msg);
-      window.location.href = `mailto:info@leslieloodgieter.nl?subject=${subject}&body=${body}`;
-      return false;
-    }
-  </script>
+        </div>
+    </section>
+
+<section class="service-areas" style="padding:40px 20px; background:#f5f5f5;">
+    <h2 style="text-align:center; margin-bottom:20px;">Werkgebied</h2>
+    <p style="text-align:center; max-width:800px; margin:auto; font-size:1.1rem;">
+        Wij bieden loodgietersdiensten in <strong>Rotterdam</strong> en de omliggende regio, 
+        waaronder <strong>Rhoon</strong>, <strong>Poortugaal</strong> en andere plaatsen in de omgeving.
+    </p>
+
+    <h3 style="margin-top:30px;">Rotterdam Stadsdelen</h3>
+    <ul style="columns:2; padding-left:20px; line-height:1.7;">
+        <li>Centrum</li>
+        <li>Delfshaven</li>
+        <li>Overschie</li>
+        <li>Noord</li>
+        <li>Hillegersberg-Schiebroek</li>
+        <li>Kralingen-Crooswijk</li>
+        <li>Feijenoord</li>
+        <li>IJsselmonde</li>
+        <li>Pernis</li>
+        <li>Charlois</li>
+        <li>Hoogvliet</li>
+        <li>Rozenburg</li>
+    </ul>
+
+    <h3 style="margin-top:20px;">Gemeente Albrandswaard</h3>
+    <ul style="padding-left:20px; line-height:1.7;">
+        <li>Rhoon</li>
+        <li>Poortugaal</li>
+    </ul>
+
+    <h3 style="margin-top:20px;">Nabijgelegen plaatsen</h3>
+    <ul style="columns:2; padding-left:20px; line-height:1.7;">
+        <li>Barendrecht</li>
+        <li>Ridderkerk</li>
+        <li>Schiedam</li>
+        <li>Vlaardingen</li>
+        <li>Capelle aan den IJssel</li>
+        <li>Spijkenisse</li>
+        <li>Hoogvliet</li>
+        <li>Pernis</li>
+        <li>Heijplaat</li>
+    </ul>
+</section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>© 2025 Leslie Loodgieter — Alle rechten voorbehouden.</p>
+        </div>
+    </footer>
+
+
 </body>
 </html>
